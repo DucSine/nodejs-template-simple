@@ -1,3 +1,5 @@
+const Response = require("../helpers/response.helper")
+
 exports.helloWord = async (req, res, next) => {
-    res.send('Hello Word!')
+    return Response.success(res, { message: 'helloword' })
 }

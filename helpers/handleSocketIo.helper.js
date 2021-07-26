@@ -7,18 +7,18 @@ const http = require('http')
 const server = http.createServer(app);
 
 const io = socketIo(server, {
-  cors: {
-    origin: `http://localhost:${process.env.PORT}`,
-    methods: ['GET', 'POST', 'PATCH', 'DELETE'],
-  },
+    cors: {
+        origin: `http://localhost:${process.env.PORT}`,
+        methods: ['GET', 'POST', 'PATCH', 'DELETE'],
+    },
 });
 
 io.on('connection', (socket) => {
-  console.log('Has connection');
+    console.log('Has connection');
 
-  socket.on('disconnect', () => {
-    console.log('User has left');
-  });
+    socket.on('disconnect', () => {
+        console.log('User has left');
+    });
 });
 
 module.exports = { app, server, io }
