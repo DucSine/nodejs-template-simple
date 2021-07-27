@@ -7,9 +7,9 @@ const path = require('path')
 const { app, server } = require('./helpers/handleSocketIo.helper')
 const port = process.env.PORT || 3000
 
-const { serve, swaggerSetup } = require('./configs/swagger')
+const { serve, swaggerSetup } = require('./configs/swagger.config')
 
-const connectDB = require('./configs/db')
+const connectDB = require('./configs/db.config')
 const apiRoute = require('./routes/api.routes')
 
 connectDB()

@@ -11,7 +11,7 @@ const options = {
         },
         servers: [{ url: `http://localhost:${process.env.PORT}` }],
     },
-    apis: ["./routes/*.js"]
+    apis: ["./swagger/*.yaml"]
 }
 
 const specs = swaggerjsDoc(options)
