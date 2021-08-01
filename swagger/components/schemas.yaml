@@ -1,0 +1,38 @@
+components:
+    schemas:
+        Users:
+            type: object
+            properties:
+                _id:
+                    type: string
+                    required: true
+                fullName:
+                    type: string
+                    required: true
+                avatar:
+                    type: string
+                    required: false
+                email:
+                    type: string
+                    required: true
+                password:
+                    type: string
+                    required: true
+                post:
+                    type: string
+                    required: true
+        Posts:
+            type: object
+            properties:
+                _id:
+                    type: string
+                    required: true
+                title:
+                    type: string
+                    required: true
+                body:
+                    type: string
+                    required: true
+                dateCreate:
+                    type: string
+                    format: date-time

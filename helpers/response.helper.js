@@ -3,7 +3,7 @@ class Response {
         // console.log('Thành công');
         return res.status(status).json({
             status: 'success',
-            data,
+            data
         });
     }
 
@@ -14,8 +14,8 @@ class Response {
             error: {
                 message: err.message,
                 type: err.type,
-                errors: err.errors,
-            },
+                errors: err.errors
+            }
         });
     }
 }

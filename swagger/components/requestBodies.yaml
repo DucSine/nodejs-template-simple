@@ -1,0 +1,11 @@
+components:
+    requestBodies:
+        LoginRequest:
+            type: object
+            properties:
+                username:
+                    type: string
+                    example: 'ducsine'
+                password:
+                    type: string
+                    example: 'duc12345'

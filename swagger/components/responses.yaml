@@ -1,0 +1,9 @@
+components:
+    responses:
+        LoginResponse:
+            type: object
+            properties:
+                token:
+                    type: string
+                    example:
+                        $ref: '#/components/examples/token'

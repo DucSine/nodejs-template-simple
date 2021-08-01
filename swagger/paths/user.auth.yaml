@@ -1,0 +1,19 @@
+paths:
+    /api/user/auth/login:
+        post:
+            tags: [auth]
+            summary: user login
+            description: user login
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/requestBodies/LoginRequest'
+            responses:
+                200:
+                    description: login successfully
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/responses/LoginResponse'
