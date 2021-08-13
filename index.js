@@ -12,7 +12,7 @@ const { serve, swaggerSetup } = require('./configs/swagger.config');
 const connectDB = require('./configs/db.config');
 const apiRoute = require('./routes/api.routes');
 
-//connectDB();
+connectDB();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
